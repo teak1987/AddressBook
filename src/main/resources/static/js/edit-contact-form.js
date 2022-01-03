@@ -1,19 +1,12 @@
 $(document).ready(function() {
 	$("#submitEdit").on("click", function() {
-		alert("Hellooo");
+
 		var id = $("#id").val();
     	var name = $("#name").val();
 	    var address = $("#address").val();
         var file = $("#image").val(); 
         var form = $("#form").serialize();
         var data = new FormData($("#form")[0]);	 
-    
-   /*   alert(data);
-        alert(id);
-		alert(name);
-		alert(address);*/
-	
-		
 		data.append('id',id);
 		data.append('name', name);
 		data.append('address', address);
